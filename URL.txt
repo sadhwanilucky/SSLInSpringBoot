@@ -1,0 +1,53 @@
+https://www.thomasvitale.com/https-spring-boot-ssl-certificate/
+https://www.youtube.com/watch?v=rm9OKTSm-4A
+https://www.youtube.com/watch?v=HLSmjZ5vN0w
+
+Steps1> Go to bin of JDK then CMD (*****As Administrator user ****)
+step2>keytool -genkeypair -alias tomcat -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore keystore.p12 -validity 3650 -storepass password
+step3> Paste generated file keystore.p12 in resource folder.
+
+step5> Generae certificate for client
+keytool -export -keystore keystore.p12 -alias tomcat -file myCertificate.crt
+
+6>Add cerficate 
+keytool -importcert -file myCertificate.crt -alias tomcat -keystore C:/Program Files/Java/jdk1.8.0_241/jre/lib/security/cacerts
+
+1>http2 in springboot aplication
+2>tls role https try to check in browser
+
+To work with postman
+https://stackoverflow.com/questions/47806876/could-not-get-any-response-response-when-using-postman-with-subdomain
+
+To enable http2 in spring boot
+https://stackoverflow.com/questions/38612704/enable-http2-with-tomcat-in-spring-boot
+
+What is SSL and TLS
+https://www.websecurity.digicert.com/en/in/security-topics/what-is-ssl-tls-https
+
+Example to implment tls in springboot
+https://medium.com/swlh/how-to-secure-a-spring-boot-application-with-tls-176062895559
+
+Advanced implementation
+https://golb.hplar.ch/2019/01/spring-boot-with-tls-localhost.html
+
+Post https fix
+https://www.youtube.com/watch?v=I-nvLhffKhY
+https://www.youtube.com/watch?v=T4Df5_cojAs
+
+Medium example
+https://medium.com/swlh/how-to-secure-a-spring-boot-application-with-tls-176062895559
+
+
+
+ETC
+<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+reactstrap

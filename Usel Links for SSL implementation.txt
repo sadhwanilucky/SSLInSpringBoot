@@ -1,0 +1,11 @@
+Basics
+	What is SSL and TLS
+	https://www.websecurity.digicert.com/en/in/security-topics/what-is-ssl-tls-https
+
+Implementation
+	Example
+	https://medium.com/swlh/how-to-secure-a-spring-boot-application-with-tls-176062895559
+
+Advanced
+	Configuration
+	https://golb.hplar.ch/2019/01/spring-boot-with-tls-localhost.html
